@@ -1,9 +1,21 @@
-bases:
-- ../../base
+# bases:
+# - ../../base
 
-patches:
- - replicas.yaml
+# patches:
+#  - replicas.yaml
 
-configMapGenerator:
-- name: mykustom-map
-  env: config.properties
+# configMapGenerator:
+# - name: mykustom-map
+#   env: config.properties
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+
+patchesJson6902:
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: my-app
+    path: deployment-patch.yaml
