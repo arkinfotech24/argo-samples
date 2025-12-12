@@ -6,3 +6,12 @@ resources:
 labels:
 - pairs:
     app: kustomwebapp
+
+# Generate the ConfigMap required by your Deployment
+configMapGenerator:
+  - name: mykustom-map
+    literals:
+      - APP_ENV=development
+      - DB_HOST=mydb.dev.svc.cluster.local
+      - DB_PORT=5432
+      - LOG_LEVEL=info
