@@ -1,10 +1,13 @@
-bases:
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
 - ../../base
 
-patches:
- - replicas.yaml
+labels:
+- pairs:
+    app: kustomwebapp
 
- # Generate the ConfigMap required by your Deployment
+# Generate the ConfigMap required by your Deployment
 configMapGenerator:
   - name: mykustom-map
     literals:
@@ -12,6 +15,12 @@ configMapGenerator:
       - DB_HOST=mydb.prod.svc.cluster.local
       - DB_PORT=5432
       - LOG_LEVEL=info
+
+# bases:
+# - ../../base
+
+# patches:
+#  - replicas.yaml
 
 # configMapGenerator:
 # - name: mykustom-map
