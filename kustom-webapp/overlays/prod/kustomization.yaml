@@ -4,6 +4,15 @@ bases:
 patches:
  - replicas.yaml
 
+ # Generate the ConfigMap required by your Deployment
 configMapGenerator:
-- name: mykustom-map
-  env: config.properties
+  - name: mykustom-map
+    literals:
+      - APP_ENV=production
+      - DB_HOST=mydb.prod.svc.cluster.local
+      - DB_PORT=5432
+      - LOG_LEVEL=info
+
+# configMapGenerator:
+# - name: mykustom-map
+#   env: config.properties
