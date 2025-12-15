@@ -6,20 +6,20 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Monitor npm dependencies (JavaScript/TypeScript)
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor npm dependencies (JavaScript/TypeScript)
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Python dependencies (pip)
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Python dependencies (pip)
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Maven dependencies (Java/Kotlin)
-  - package-ecosystem: "maven"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Maven dependencies (Java/Kotlin)
+  # - package-ecosystem: "maven"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
