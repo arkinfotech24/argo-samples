@@ -6,11 +6,11 @@ updates:
     schedule:
       interval: "weekly"
 
-  # # Monitor npm dependencies (JavaScript/TypeScript)
-  # - package-ecosystem: "npm"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
+  # Monitor npm dependencies (JavaScript/TypeScript)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
 
   # # Monitor Python dependencies (pip)
   # - package-ecosystem: "pip"
