@@ -12,14 +12,20 @@ updates:
     schedule:
       interval: "weekly"
 
-  # # Monitor Python dependencies (pip)
-  # - package-ecosystem: "pip"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
+  # Monitor Python dependencies (pip)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
 
-  # # Monitor Maven dependencies (Java/Kotlin)
-  # - package-ecosystem: "maven"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
+  # Monitor Maven dependencies (Java/Kotlin)
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Monitor Gradle dependencies (Java/Kotlin)
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
