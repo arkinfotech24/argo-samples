@@ -6,38 +6,38 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Monitor npm dependencies (JavaScript/TypeScript)
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor npm dependencies (JavaScript/TypeScript)
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Python dependencies (pip)
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Python dependencies (pip)
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Maven dependencies (Java/Kotlin)
-  - package-ecosystem: "maven"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Maven dependencies (Java/Kotlin)
+  # - package-ecosystem: "maven"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Gradle dependencies (Java/Kotlin)
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Gradle dependencies (Java/Kotlin)
+  # - package-ecosystem: "gradle"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Docker images
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Docker images
+  # - package-ecosystem: "docker"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
 
-  # Monitor Go modules
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # # Monitor Go modules
+  # - package-ecosystem: "gomod"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
